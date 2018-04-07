@@ -8,6 +8,7 @@ We just have:
 - asteroids and bonuses destroying
 - player moving up and down
 - shield animation
+- basic menu elements
 
 Goals:
 - bullet shooting
@@ -22,5 +23,5 @@ Goals:
 - ship explosion animation
 - ship booster animation
 - gameover message
-- menu
 - statistics - name and points
+- finished menu

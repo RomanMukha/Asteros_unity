@@ -9,44 +9,43 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1071925564523076}
+  m_RootGameObject: {fileID: 1708966543111674}
   m_IsPrefabParent: 1
---- !u!1 &1071925564523076
+--- !u!1 &1708966543111674
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4689239718790420}
-  - component: {fileID: 61348787794661932}
-  - component: {fileID: 114960315418603300}
+  - component: {fileID: 4755137249489260}
+  - component: {fileID: 61062304359151718}
   m_Layer: 0
-  m_Name: SpawnArea
+  m_Name: DeleteArea
   m_TagString: Untagged
-  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: -1577725955494882426, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4689239718790420
+--- !u!4 &4755137249489260
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1071925564523076}
+  m_GameObject: {fileID: 1708966543111674}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.23, y: -0.08, z: -0.07315657}
-  m_LocalScale: {x: 1, y: 13, z: 1}
+  m_LocalPosition: {x: -83, y: 204, z: 300}
+  m_LocalScale: {x: 27.65754, y: 562.5353, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61348787794661932
+--- !u!61 &61062304359151718
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1071925564523076}
+  m_GameObject: {fileID: 1708966543111674}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -66,19 +65,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114960315418603300
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1071925564523076}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc3dac87ac72f648bab00dcf807e3bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AsteroPrefab: {fileID: 1410790553544864, guid: 4b297518160d2d848bcb6342651fca94,
-    type: 2}
-  BonusPrefab: {fileID: 1572491580208858, guid: 5bf3ab87eb3c41a4f9c3d1a3d58f0b89,
-    type: 2}
-  SpawnTime: 1

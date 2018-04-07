@@ -4,16 +4,6 @@ using UnityEngine;
 
 public class BonusScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     // Checking bonus collisions with other gameObjects.
     private void OnCollisionEnter2D(Collision2D col)
     {

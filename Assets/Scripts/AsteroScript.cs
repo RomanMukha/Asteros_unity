@@ -4,19 +4,7 @@ using UnityEngine;
 
 public class AsteroScript : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    // Checking astero collisions with other gameObjects.
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.name == "Player")

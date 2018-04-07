@@ -5,14 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public int Lives = 3;
-    public float Speed = 20.0f;
+    public float Speed = 300.0f;
     private Rigidbody2D PlayerRB;
-
-    // Use this for initialization.
-    private void Awake()
-    {
-
-    }
 
     void Start ()
     {
