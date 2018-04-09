@@ -10,8 +10,9 @@ public class BonusScript : MonoBehaviour {
         if (col.gameObject.name == "Player")
         {
             Destroy(gameObject, 0f);
-            // Hp ++
+            LifeScript.lifeValue += 1;
         }
+
         if (col.gameObject.name == "DeleteArea")
         {
             Destroy(gameObject, 0f);
