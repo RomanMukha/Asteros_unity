@@ -18,5 +18,11 @@ public class BonusScript : MonoBehaviour {
             Destroy(gameObject, 0f);
             // Nothing special happens.
         }
+
+        if (col.gameObject.tag == "Ammo")
+        {
+            Destroy(gameObject, 0f);
+            // Add bonus explosion animation!
+        }
     }
 }

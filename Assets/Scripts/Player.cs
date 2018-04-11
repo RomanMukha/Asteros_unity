@@ -31,8 +31,5 @@ public class Player : MonoBehaviour {
     {
         // Create the Bullet from the Bullet Prefab
         GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject;
-
-        // Destroy the bullet after 2 seconds
-        Destroy(bullet, 2.0f);
     }
 }

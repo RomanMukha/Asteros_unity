@@ -13,16 +13,17 @@ public class AsteroScript : MonoBehaviour
             LifeScript.lifeValue -= 1;
         }
 
-        if (col.gameObject.name == "Bullet")
+        if (col.gameObject.tag == "Ammo")
         {
             Destroy(gameObject, 0f);
             ScoreScript.scoreValue += 1;
+            // Add astero explosion animation!
         }
 
         if (col.gameObject.name == "DeleteArea")
         {
             Destroy(gameObject, 0f);
-            // Deathcounter ++
+            DefeatCounter.defeatValue += 1;
         }
     }
 

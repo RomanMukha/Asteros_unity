@@ -9,7 +9,7 @@ public class AsteroMoveScript : MonoBehaviour {
 
     void Start()
     {
-        EndPosition = new Vector2(-83.0f, Random.Range(-30, 440));
+        EndPosition = new Vector2(-150.0f, Random.Range(-30, 440));
     }
 	void Update()
     {

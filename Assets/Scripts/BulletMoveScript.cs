@@ -9,10 +9,12 @@ public class BulletMoveScript : MonoBehaviour {
 
     void Start()
     {
-        EndPosition = new Vector2(700.0f, transform.position.y);
+        EndPosition = new Vector2(1100.0f, transform.position.y);
     }
     void Update()
     {
         transform.position = Vector2.MoveTowards(transform.position, EndPosition, Time.deltaTime * BulletSpeed);
     }
+
+
 }
