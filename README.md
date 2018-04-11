@@ -12,15 +12,15 @@ We just have:
 - shooting
 - lives counter
 - counters viewing
+- points counter
 
 Goals:
 - pausing game during menu viewing
 - player moving 4 vectors
 - asteroid explosion animation
 - bonus explosion animation
-- bonus rotation
-- asteroid rotation
-- points counter
+- bonus moving rotation
+- asteroid moving rotation
 - ship explosion animation
 - gameover message
 - statistics - name and points
