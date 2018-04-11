@@ -9,19 +9,24 @@ We just have:
 - player moving up and down
 - shield animation
 - basic menu elements
+- shooting
+- lives counter
+- counters viewing
 
 Goals:
-- bullet shooting
+- pausing game during menu viewing
 - player moving 4 vectors
 - asteroid explosion animation
 - bonus explosion animation
 - bonus rotation
 - asteroid rotation
-- lives counter
 - points counter
-- counters viewing
 - ship explosion animation
-- ship booster animation
 - gameover message
 - statistics - name and points
-- finished menu
+- menu options
+- menu stats
+
+ExtraGoals:
+- to add a boss
+- original animation
