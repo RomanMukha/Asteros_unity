@@ -681,6 +681,21 @@ Prefab:
       propertyPath: m_UseAutoMass
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 50038530579963986, guid: 60bf9057d8ab6bf4fbe1a422ae096116,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50038530579963986, guid: 60bf9057d8ab6bf4fbe1a422ae096116,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 50038530579963986, guid: 60bf9057d8ab6bf4fbe1a422ae096116,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 60bf9057d8ab6bf4fbe1a422ae096116, type: 2}
   m_IsPrefabParent: 0
