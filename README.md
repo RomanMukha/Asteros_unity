@@ -6,7 +6,7 @@ There is no original animation in the game.
 We just have:
 - asteroids and bonuses moving
 - asteroids and bonuses destroying
-- player moving up and down
+- player moving 4 vectors
 - shield animation
 - basic menu elements
 - shooting
@@ -16,7 +16,6 @@ We just have:
 
 Goals:
 - pausing game during menu viewing
-- player moving 4 vectors
 - asteroid explosion animation
 - bonus explosion animation
 - bonus moving rotation
