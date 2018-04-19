@@ -56,15 +56,15 @@ public class Player : MonoBehaviour {
         {
             transform.position = new Vector2(-50f, transform.position.y);
         }
-        else if (transform.position.x >= 400f)
+        if (transform.position.x >= 400f)
         {
             transform.position = new Vector2(400f, transform.position.y);
         }
-        else if (transform.position.y >= 435f)
+        if (transform.position.y >= 435f)
         {
             transform.position = new Vector2(transform.position.x, 435f);
         }
-        else if (transform.position.y <= -19f)
+        if (transform.position.y <= -19f)
         {
             transform.position = new Vector2(transform.position.x, -19f);
         }
