@@ -16,12 +16,12 @@ public class Spawner : MonoBehaviour {
         InvokeRepeating("BonusSpawn", 0, BonusSpawnTime);
         InvokeRepeating("AsteroSpawn", 0, AsteroSpawnTime);
     }
-    void BonusSpawn()
+    private void BonusSpawn()
     {
         SpawnPosition = new Vector2(SpawnArea.transform.position.x, Random.Range(-30, 440));
         GameObject bonus = Instantiate(BonusPrefab, SpawnPosition, Quaternion.identity) as GameObject;
     }
-    void AsteroSpawn()
+    private void AsteroSpawn()
     {
         SpawnPosition = new Vector2(SpawnArea.transform.position.x, Random.Range(-30, 440));
         GameObject astero = Instantiate(AsteroPrefab, SpawnPosition, Quaternion.identity) as GameObject;

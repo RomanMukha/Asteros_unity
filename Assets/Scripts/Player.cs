@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    //Floating point variable to store the player's movement speed.
-    public float Speed = 300.0f;
-    //Store a reference to the Rigidbody2D component required to use 2D Physics.
-    //private Rigidbody2D PlayerRB;
+    [SerializeField]
+    private float Speed = 300.0f;
 
     public GameObject bulletPrefab;
     public Transform bulletSpawn;
+
+    //Store a reference to the Rigidbody2D component required to use 2D Physics.
+    //private Rigidbody2D PlayerRB;
 
     // Use this for initialization
     private void Start()
@@ -24,12 +25,33 @@ public class Player : MonoBehaviour {
     // Update is called once per frame
     private void Update()
     {
+        Movement();
+
+        Fire();
+
+        Borders();
+
+    }
+
+    private void Fire()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) // Maybe we should use Input.GetAxis("Fire") or something similar?
+        {
+            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject;
+        }
+    }
+
+    private void Movement ()
+    {
         float verticalInput = Input.GetAxis("Vertical");
         float horizontalInput = Input.GetAxis("Horizontal");
         transform.Translate(Vector2.up * Speed * verticalInput * Time.deltaTime);
         transform.Translate(Vector2.right * Speed * horizontalInput * Time.deltaTime);
+    }
 
-        // Build up ship movement borders using "if". So, we don't use physics here at all.
+    private void Borders()
+    // Build up ship movement borders using "if". So, we don't use physics here at all.
+    {
         if (transform.position.x <= -50f)
         {
             transform.position = new Vector2(-50f, transform.position.y);
@@ -46,17 +68,5 @@ public class Player : MonoBehaviour {
         {
             transform.position = new Vector2(transform.position.x, -19f);
         }
-
-        // Invoke shooting.
-        if (Input.GetKeyDown(KeyCode.Space)) // Maybe we should use Input.GetAxis("Fire") or something similar?
-        {
-            Fire();
-        }
-    }
-
-    private void Fire()
-    {
-        // Create the Bullet from the Bullet Prefab
-        GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity) as GameObject;
     }
 }
