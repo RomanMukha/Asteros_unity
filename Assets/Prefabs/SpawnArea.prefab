@@ -20,11 +20,10 @@ GameObject:
   m_Component:
   - component: {fileID: 4796398323043224}
   - component: {fileID: 61178323778598390}
-  - component: {fileID: 114465681977110918}
   m_Layer: 0
   m_Name: SpawnArea
-  m_TagString: Untagged
-  m_Icon: {fileID: -2349822300998112484, guid: 0000000000000000d000000000000000, type: 0}
+  m_TagString: Border
+  m_Icon: {fileID: 6926474624037801865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -35,8 +34,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1464830841324400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 962, y: 209, z: 300}
-  m_LocalScale: {x: 27.65754, y: 562.5353, z: 0}
+  m_LocalPosition: {x: 470, y: 0, z: 0}
+  m_LocalScale: {x: 10, y: 500, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -66,21 +65,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114465681977110918
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1464830841324400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acc3dac87ac72f648bab00dcf807e3bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AsteroPrefab: {fileID: 1410790553544864, guid: 4b297518160d2d848bcb6342651fca94,
-    type: 2}
-  BonusPrefab: {fileID: 1572491580208858, guid: 5bf3ab87eb3c41a4f9c3d1a3d58f0b89,
-    type: 2}
-  BonusSpawnTime: 5
-  AsteroSpawnTime: 0.5
-  SpawnArea: {fileID: 1464830841324400}

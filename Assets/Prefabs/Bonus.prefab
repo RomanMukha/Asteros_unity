@@ -38,7 +38,6 @@ GameObject:
   - component: {fileID: 58613382558538398}
   - component: {fileID: 50444426509233412}
   - component: {fileID: 114290654398782128}
-  - component: {fileID: 114306278324529274}
   m_Layer: 0
   m_Name: Bonus
   m_TagString: Enemy
@@ -119,18 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae6123db86e517f4f985d296be773108, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &114306278324529274
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1572491580208858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abafd7167f1e3e24fa055def93e8ae41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BonusSpeed: 300
+  _BonusSpeed: 300
 --- !u!212 &212230567791578050
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -162,8 +150,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2101167369
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 283c71b9ba2874048a36d1f19b4a6b0d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

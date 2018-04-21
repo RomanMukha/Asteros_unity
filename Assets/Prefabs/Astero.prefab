@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 58606468285110778}
   - component: {fileID: 50054119684070100}
   - component: {fileID: 114926355150778204}
-  - component: {fileID: 114191349281038526}
   m_Layer: 0
   m_Name: Astero
   m_TagString: Enemy
@@ -108,18 +107,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!114 &114191349281038526
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1410790553544864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94c98cdbfe259fc4abd2275996e623b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AsteroSpeed: 300
 --- !u!114 &114926355150778204
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -131,6 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e322cb559a2298f42940d49ac7e9b60e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _AsteroSpeed: 300
 --- !u!212 &212010371906988892
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -162,8 +150,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2101167369
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d7eb0be60cf5fbd4faa80e14e7643f87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
